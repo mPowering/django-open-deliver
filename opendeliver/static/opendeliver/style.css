@@ -16,6 +16,17 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+}
+
+.main img {
+	margin:20px;
+}
+
+p {
+	margin-top:20px;
+	
 }
 .navbar-fixed-top {
     min-height: 50px; 
@@ -31,12 +42,12 @@ h3.homepage {
 }
 
 a {
-    color: #61530E;
+    color: #2a6083;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #61530E;
+    color: #2a6083;
     text-decoration: underline;
 }
 
@@ -55,12 +66,16 @@ a:hover, a:focus {
 
 .navbar-inverse {
     background-color: #ffffff;
-    border-color:  #dfc12a;
-    border-bottom: 2px solid #dfc12a;
+    border-color:  #2a6083;
+    border-bottom: 1px solid #2a6083;
 }
 
 .navbar-inverse .navbar-brand {
-    color: #fff;
+    color: #000;
+}
+
+.navbar-inverse .navbar-brand a:hover, a:focus {
+    color: #000;
 }
 
 .navbar-header > a > img {
@@ -72,7 +87,7 @@ a:hover, a:focus {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    background-color: #dfc12a;
+    background-color: #2a6083;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
@@ -93,7 +108,7 @@ a:hover, a:focus {
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
 	background-color: #033f62;
-	border: 1px dotted #fff	;
+	border: 1px dotted #000	;
 }
 
 
@@ -130,7 +145,7 @@ a:hover, a:focus {
 .nav-sidebar > li > a {
   padding-right: 20px;
   padding-left: 20px;
-  color: #495525;
+  color: #2a6083;
 }
 .nav-sidebar > .text {
   color: #495525;
@@ -172,35 +187,8 @@ a:hover, a:focus {
 	margin: 0;
 }
 
-/*
- * Placeholder dashboard ideas
- */
 
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
 
-/*
- * Share buttons
- */
- 
-.share-button {
-	margin-top:20px;
-	float: left; 
-	width: 100px;
-}
- 
 /*
  * Forms
  */
@@ -239,7 +227,7 @@ a:hover, a:focus {
  */
  
 #footer {
-	border-top: 1px solid #dfc12a;
+	border-top: 1px solid #2a6083;
 	margin-top:50px;
 	padding: 20px 0;
 	text-align:right;
@@ -251,89 +239,6 @@ tr.hover:hover {
     cursor: pointer;
 }
 
-div.date-picker-row-fluid {
-	float:left;
-}
-
-.vertical-align {
-    display: flex;
-    align-items: center;
-}
-
-.page_navigator, .orderby {
-	padding:10px 0;
-}
-
-div.category {
-	padding-bottom:10px;
-}
-
-div.resourcetag {
-	display:inline-block; 
-	width:120px; 
-	min-height:100px; 
-	text-align:center; 
-	margin: auto;
-	vertical-align:top;
-}
-
-.file-row {
-	padding-bottom: 10px;
-}
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
-img.resource-row-icon {
-	opacity: .6;
-	margin-bottom: 10px;
-}
-
-img.resource-row-icon:hover {
-	opacity: 1;
-}
-
-.advanced-search-link {
-	text-align:right;
-	margin-top:-10px;
-}
-
-.resource-row-study-time {
-	display: inline-block; 
-	background-color: #033f62;
-	opacity: .6;
-	color: #fff;
-	padding: 0 8px 0 0;
-	vertical-align: bottom;
-	margin-bottom: 10px;
-}
-
-.resource-image {
-	display:block; 
-	margin: 20px auto; 
-	max-width: 250px
-}
-
-.resource-image-default {
-	opacity: .5;
-}
-
-.resource-row-thumbnail {
-	display: block; 
-	margin: 0 auto;
-}
-
-.resource-row-thumbnail-default {
-	opacity: .5;
-}
-
-.resource-row-study-time:hover {
-	opacity: 1;
-}
-
 a.named-anchor {
 	display: block; position: relative; top: -80px; visibility: hidden;
 }
@@ -342,32 +247,5 @@ a.prominent {
 	text-decoration: underline;
 }
 
-.rating-star:hover {
-	cursor:pointer;
-}
 
-div.profile {
-	margin-bottom:10px;
-	
-}
 
-#tag-description {
-	float: left;
-}
-
-/*
- * for country key facts
- */
-#country-key-facts {
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 10px;
-	float: right;
-}
-
-#country-key-facts h4 {
-	padding-top: 0;
-	margin-top: 0;
-	text-align: center;
-
-}

@@ -1,15 +1,69 @@
 {% extends "base.html" %}
 {% load i18n %} 
-{% load staticfiles %}
+{% load static %}
 
 {% block extra_head_title %}{% trans 'Open Deliver' %}{% endblock extra_head_title %}
 
 {% block content %}
 
 
-<h3 style="text-align: center">{% trans 'Open Deliver' %}</h3>
+<h1 style="text-align: center">{% trans 'Open Deliver' %}</h1>
 
 
+<p>Open Deliver is a process to design, develop, deliver and
+	evaluate digital training. Open Deliver can provide a sustainable
+	process for providing digital training to a country’s health workforce.
+	It consists of the following stages:</p>
 
+<ol>
+	<li><strong>Addressing Demand</strong>: Identify training needs of
+		health workers; taking into account workflows, language, literacy and
+		other relevant factors.</li>
+	<li><strong>Identifying and Adapting Content</strong>: Create or
+		adapt existing multimedia training materials for education, and store
+		on a content sharing platform like ORB.</li>
+	<li><strong>Creating a Training Program</strong>: Use or adapt
+		existing multimedia materials, and organize those materials into
+		courses.</li>
+	<li><strong>Deploying Content and Delivering Training</strong>:
+		Deliver courses to health workers’ mobile phones, and support their
+		progress through the training.</li>
+	<li><strong>Monitoring, Evaluating, and Iterating</strong>:
+		Collect usage analytics to evaluate trainings and determine which
+		materials work best.</li>
+</ol>
+
+<p>
+	<a href="{% static 'opendeliver/images/Transparent-OD-Photo.png' %}"><img
+		src="{% static 'opendeliver/images/Transparent-OD-Photo-300x242.png' %}"
+		width="300" height="242" align="left"></a> Open Deliver streamlines
+	digital training by reconfiguring and integrating existing
+	technologies. These technologies consist of a digital content sharing
+	library, a learning management system (LMS), and a mobile application
+	(app). mPowering typically uses <a href="http://health-orb.org/">ORB</a>
+	as the content sharing library, <a href="https://moodle.org/">Moodle</a>
+	for the LMS and <a
+		href="https://digital-campus.org/oppiamobile/overview/">OppiaMobile</a>
+	as the Android based application.
+</p>
+
+<p>Open Deliver can accept multiple streams of content from
+	different providers into a content sharing platform. All training
+	providers are able to access this platform to ensure new content
+	development is not duplicative. The Android based app can deliver
+	content offline, and, when there is a connection, deliver usage
+	analytics for monitoring and evaluation. The process is designed to be
+	technologically independent – as new technologies emerge, they can be
+	adapted to replace an existing technology used in a particular stage
+	without disrupting the entire process.</p>
+
+<p>Open Deliver is guided by the <a href="http://digitalprinciples.org/">Principles for Digital Development</a>.
+	It allows governments to assure the quality of all content used in the
+	system, and facilitates a coordinated approach towards educating
+	workforces with standards- based educational materials and protocols.
+	mPowering is working actively towards institutionalization of this
+	process in partner countries.</p>
+
+<p>Please contact us for more information or to work together.</p>
 
 {% endblock %}
